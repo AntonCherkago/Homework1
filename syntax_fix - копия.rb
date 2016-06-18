@@ -17,11 +17,10 @@ def initialize(array_task)
       @hometask1 = Hometask1.new
     end
 
-    def test_rand
-      h = w = 4
-      @arr = Array.new(h){ Array.new(w){ rand(-10..10) } }
+    def test_sum_of_negative
       puts "Original array: #{arr}"
       hometask1.stub(:rand, -1) do
+      hometask1 = Hometask1.new
       assert_equal(-1, hometask1.flip)
     end
 
