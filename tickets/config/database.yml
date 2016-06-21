@@ -1,0 +1,33 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+
+development:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: courses
+  pool: 5
+  username: anton
+  password: 251990
+
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: courses_test
+  pool: 5
+  username: anton
+  password: 251990
+
+production:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  database: courses_pruduction
+  pool: 5
+  username: anton
+  password: 251990
